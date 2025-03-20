@@ -1,68 +1,99 @@
-/* Background Styling */
+/* Apply a nice gradient background */
 body {
-    background-color: #f3f4f6;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Centering the Card */
-  .login-container {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
   }
   
-  /* Card Styling */
+  /* Login container to center everything */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Glassmorphism login card */
   .login-card {
-    width: 400px;
+    width: 360px;
     padding: 2rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
-  /* Input Fields */
+  /* Title and subtitle */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
   .input-field {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .input-field:focus {
-    border-color: #2563eb;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
   }
   
-  /* Button Styling */
+  /* Login button */
   .login-btn {
     width: 100%;
     padding: 12px;
-    background-color: #2563eb;
-    color: white;
+    background-color: #fff;
+    color: #667eea;
     font-size: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
   }
   
   .login-btn:hover {
-    background-color: #1d4ed8;
+    background-color: #ddd;
   }
   
-  /* Sign-up Text */
+  /* Sign-up text */
   .signup-text {
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 14px;
-    color: #6b7280;
+    color: white;
   }
   
   .signup-text a {
-    color: #2563eb;
+    color: #ffd700;
     text-decoration: none;
     font-weight: bold;
   }
@@ -70,3 +101,4 @@ body {
   .signup-text a:hover {
     text-decoration: underline;
   }
+  
