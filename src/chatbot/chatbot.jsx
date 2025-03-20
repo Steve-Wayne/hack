@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Chatbot.css";
+import { Link } from "react-router-dom";
 
 const ChatbotPage = () => {
   const [messages, setMessages] = useState([
@@ -54,7 +55,7 @@ const ChatbotPage = () => {
         {profileOpen && (
           <div className="profile-dropdown">
             <ul>
-              <li>View Profile</li>
+              <Link to="/editprofilepage"><li>Edit Profile</li></Link>
               <li>Settings</li>
               <li>Logout</li>
             </ul>

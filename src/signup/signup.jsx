@@ -61,7 +61,7 @@ const SignupPage = () => {
         </form>
         <p className="login-text">
           Already have an account?
-          <Link to="/loginpage">
+          <Link to="/">
           <a className="belli" href="#">Login</a>
           </Link> 
         </p>

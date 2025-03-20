@@ -13,8 +13,8 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<ChatbotPage/>}/>
-        <Route path="/loginpage" element={<LoginPage/>}/>
+        <Route path="/chatbotpage" element={<ChatbotPage/>}/>
+        <Route path="/" element={<LoginPage/>}/>
         <Route path="/logoutpage" element={<LogoutPage/>}/>
         <Route path="/signuppage" element={<SignupPage/>}/>
         <Route path="/editprofilepage" element={<EditProfilePage/>}/>
