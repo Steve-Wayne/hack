@@ -6,6 +6,7 @@ import LoginPage from './loginpage.jsx';
 import LogoutPage from './logoutpage.jsx';
 import SignupPage from './signup/signup.jsx';
 import EditProfilePage from './editprofilepage/editprofilepage.jsx';
+import Dashboard from './getstarted/getstarted.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/logoutpage" element={<LogoutPage/>}/>
         <Route path="/signuppage" element={<SignupPage/>}/>
         <Route path="/editprofilepage" element={<EditProfilePage/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>
     </Router>
     </>

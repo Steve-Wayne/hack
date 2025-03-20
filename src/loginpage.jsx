@@ -36,7 +36,7 @@ const LoginPage = () => {
               required
             />
           </div>
-          <Link to="/chatbotpage"><button type="submit" className="login-btn">Login</button></Link>
+          <Link to="/dashboard"><button type="submit" className="login-btn">Login</button></Link>
         </form>
         <p className="signup-text">
           Don't have an account? 
